@@ -7,5 +7,6 @@ while :; do
   v3=$(($RANDOM & 100))
   v4=$(($RANDOM & 100))
   curl -d "{\"firstName\": \"John\", \"lastName\": \"Doe\", \"values\" : \"$v1,$v2,$v3,$v4\" }" $endpoint
+  echo 
   sleep 60
 done
